@@ -62,6 +62,20 @@ Tensorflow를 설치 후에는 꼭 [Ubuntu 18.04 Pytorch](https://github.com/Dee
 
 ### 벤치마크를 실행하실때 GPU테스트를 할 경우에는 Resnet50을 추천드립니다.
 
+터미널을 실행 시킨 후 슈퍼유저 (sudo -E su)로 작업을 진행하는 것을 권장합니다.
 
+파일을 받아둔 디렉토리로 이동하여 아래의 명령어로 실행을 시켜줍니다.
+
+- ./benchmark.sh
+
+만약 실행이 되지 않는다면 (chmod +x 파일명)명령어를 이용하여 실행권한을 주어 진행을 하시면됩니다.
+
+설치가 완료되면 benchmark라는 경로에 들어가 있게됩니다.
+
+> python3 scripts/tf_cnn_benchmarks/tf_cnn_benchmarks.py --num_gpus=1 --batch_size=32 --model=resnet50 --variable_update=parameter_server
+
+파이썬3를 이용하여 Resnet50모델로 batch사이즈 32로 테스트를 한다는 뜻입니다.
+
+그래픽카드마다 또는 모델마다의 적절한 batch사이즈가 다 다르기 때문에 여러 batch사이즈를 이용하여 테스트를 해본다면 최적의 batch사리즈를 찾을 수 있을것입니다.
 
 For test Tensorflow and Caffe2
