@@ -44,6 +44,24 @@ Tensorflow를 설치 후에는 꼭 [Ubuntu 18.04 Pytorch](https://github.com/Dee
 
 그리고는 설치되는 루트(/root/anaconda3)를 설정하게 되는데 따로 원하는 루트가 있으면 입력을 해주시면되고, 그대로 진행을 하시려면 엔터키를 누르시면됩니다.
 
-그리고 실행이 정상적으로 끝났다면 재부팅을 권장합니다.
+그리고 실행이 정상적으로 끝났다면 재부팅을 진행합니다.
+
+재부팅이 완료 된 후에는 사용자가 원하는 텐서플로우버전을 설치하시려면
+
+> sudo pip3 install tensorflow-gpu==
+
+위 코드를 입력하여 어떠한 버전이 설치가 가능한지 확인을 해야됩니다.
+
+만약 원하는 버전이 있다면
+
+> sudo pip install tensorflow-gpu==원하는 버전
+
+이렇게 입력을 해주시면 설치가 됩니다.
+
+# Benchmark 실행
+
+### 벤치마크를 실행하실때 GPU테스트를 할 경우에는 Resnet50을 추천드립니다.
+
+
 
 For test Tensorflow and Caffe2
