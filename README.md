@@ -1,4 +1,4 @@
-# Ubuntu18.04_Tensorflow_Caffe2
+# Ubuntu18.04_Tensorflo
 
 [Tensorflow 공식홈페이지](https://www.tensorflow.org/)
 
