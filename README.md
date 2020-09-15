@@ -1,4 +1,4 @@
-# Ubuntu18.04_Tensorflo
+# Ubuntu18.04_Tensorflow
 
 [Tensorflow 공식홈페이지](https://www.tensorflow.org/)
 
